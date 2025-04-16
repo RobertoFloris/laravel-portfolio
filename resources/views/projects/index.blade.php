@@ -27,4 +27,9 @@
             @endforeach
         </tbody>
     </table>
+
+    <div class="d-flex gap-3">
+        <a class="btn btn-primary" href="{{ route('projects.create') }}">Aggiungi Progetto</a>
+
+    </div>
 @endsection
