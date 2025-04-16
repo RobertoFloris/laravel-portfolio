@@ -16,7 +16,7 @@
             @yield('title')
         </h1>
 
-        @yield('table')
+        @yield('content')
     </div>
 </body>
 

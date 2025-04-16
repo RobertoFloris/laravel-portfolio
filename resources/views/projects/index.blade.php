@@ -2,7 +2,7 @@
 
 @section('title', 'Projects')
 
-@section('table')
+@section('content')
     <table class="table table-striped">
         <thead>
             <tr>
@@ -10,6 +10,7 @@
                 <th scope="col">Author</th>
                 <th scope="col">Category</th>
                 <th scope="col">Content</th>
+                <th scope="col">Link</th>
             </tr>
         </thead>
         <tbody>
@@ -19,6 +20,9 @@
                     <td>{{ $project->author }}</td>
                     <td>{{ $project->category }}</td>
                     <td>{{ $project->content }}</td>
+                    <td>
+                        <a href="{{ route('projects.show', $project) }}">Visualizza</a>
+                    </td>
                 </tr>
             @endforeach
         </tbody>
