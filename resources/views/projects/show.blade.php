@@ -7,7 +7,7 @@
         {{ $project->author }}
     </h2>
     <p>
-        {{ $project->category }}
+        {{ $project->type->name }}
     </p>
     <p>
         {{ $project->content }}
