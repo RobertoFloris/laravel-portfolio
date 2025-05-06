@@ -10,6 +10,15 @@
         {{ $project->type->name }}
     </p>
     <p>
+        @if (count($project->technologies) > 0)
+            @foreach ($project->technologies as $technology)
+                <span class="badge" style="background-color: {{ $technology->color }}">{{ $technology->name }}</span>
+            @endforeach
+        @endif
+
+
+    </p>
+    <p>
         {{ $project->content }}
     </p>
 
